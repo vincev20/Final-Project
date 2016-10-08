@@ -153,3 +153,39 @@ a {
 	color: black;
 }
 
+
+
+
+footer {
+    height: 100px;  
+  background-color: #2f2f2f;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 50px 0px 50px 0px;
+  color: yellow;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+footer img{
+    display: inline-block;
+
+}
+
+footer img:nth-child(2) {
+    margin-right: 25px;
+    
+}
+footer img:nth-child(3) {
+    margin-left: 25px;
+    
+}
+
+footer p {
+padding: 70px 0px 50px 0px;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}

@@ -2,11 +2,27 @@
 
 
 var $pictures = ["bluegrey.jpg", "limegrey.jpg","mintgrey.jpg","mustardgrey.jpg","purplegrey.jpg","redblack.jpg","whiteblack.jpg","whitegrey.jpg"]
+var $names = ["Blue", "Black","Olive","Teal","Purple","Red","White","Gray"]
+var $prices = ["10", "20","30","40","50","60","70","80"]
  
 var $nextLink = $('#nextLink')
 var $prevLink = $('#prevLink')
 var $mainPicture = $('#mainPicture')
- 
+var $colorButtons = $('.colored') 
+var $name = $('#name')
+var $price = $('#price')
+var $items = $('#items')
+
+$colorButtons.click(function(){
+
+	var currentIndex2 = $('.colored').index(this);
+	// alert(currentIndex2)
+	$mainPicture.attr("src", "images/" + $pictures[currentIndex2]);
+	$name.html($names[currentIndex2]);
+	$price.html($prices[currentIndex2]);
+	return false;
+})
+
 var currentIndex = 0
  
 var $addToCartButton = $('#addToCart')
@@ -30,11 +46,31 @@ $prevLink.click(function () {
 })
 
 $addToCartButton.click(function() {
+
+	/*
+
+		Add Current Item to panel via div
+		inside div, add an image
+		image float left
+
+		
+	*/
+	var link = $mainPicture.attr("src"); 
+	// alert($link)
+
+	$items.append("<li><div class='itemContainer'><img style='display:inline-block' src=" + link + " /><p style='display:inline-block'>Soul Laces</p><p>- 1 + $19.00</p></div></li>");
+
+
 	$(".panel").toggleClass('open');
 	//$(this).toggleClass("active");
 	return false;
  
 })
+
+
+
+
+
 
 $('#cartButton').click(function() {
 	$(".panel").toggleClass('open');
