@@ -260,6 +260,10 @@ height: 1730px;
 	background-color: olive;
 }
 
+.orange {
+  background-color: olive;
+}
+
 .purple {
 	background-color: purple;
 }
@@ -276,8 +280,31 @@ height: 1730px;
 	background-color: gray;
 }
 
+.itemQuantityButtons, .quantityButtonsBox {
+  display: inline-block; 
+  border: 1px solid white;
+}
 
+.imageBox, .itemDetailsBox, .priceBox {
 
+  display: inline-block; 
+  border: 0px solid white;
+}
+
+.smallItemImage {
+  width:75px;
+  height:75px;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+ul#items li {
+  display: none;
+}
+
+#totalPriceListItem {
+  display: inline-block;
+}
 
 a {
   text-decoration: none;
