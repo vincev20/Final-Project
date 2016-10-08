@@ -17,7 +17,7 @@ $nextLink.click(function() {
   }
                 
   $mainPicture.attr("src", "images/" + $pictures[currentIndex])
- 
+  return false;
 })
  
 $prevLink.click(function () {
@@ -26,17 +26,18 @@ $prevLink.click(function () {
   }
  
   $mainPicture.attr("src", "images/" + $pictures[currentIndex])
+  return false;
 })
 
 $addToCartButton.click(function() {
-	$(".panel").toggle();
+	$(".panel").toggleClass('open');
 	//$(this).toggleClass("active");
 	return false;
  
 })
 
 $('#cartButton').click(function() {
-	$(".panel").toggle();
+	$(".panel").toggleClass('open');
 	//$(this).toggleClass("active");
 	return false;
  
@@ -45,7 +46,7 @@ $('#cartButton').click(function() {
 
 
 $('#cancel').click(function() {
-	$(".panel").toggle();
+	$(".panel").toggleClass('open');
 	//$(this).toggleClass("active");
 	return false;
  

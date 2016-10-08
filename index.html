@@ -19,12 +19,11 @@
     	
 
 		<div id="container">
-			<header class="clearfix">
-				<h1>SoulLaced<img class="logoImage" src="images/soulacedlogo.jpg"></h1>
+			<header class="clearfix topBlack">
+				<h1><a href="indexLanding.html"><img class="logoImage" src="images/soullogo2.jpg"></a></h1>
 
 				<nav>
 					<ul>
-
 						<li><a href="landing.html">About</a></li>
 						<li><a href="link.txt">Shipping & Returns</a></li>
 						<li><a href="link.txt"><img class="headerIcons" src="images/login.png"/></a></li>
@@ -38,8 +37,9 @@
 			<main>
 				<article>
 					<h2></h2>
-					<img id="mainPicture" src="images/blackgrey.jpg"/>
-					
+						<div class="pictureContainer">
+							<img id="mainPicture" src="images/blackgrey.jpg"/>
+						</div>
 					<p>
 					</p>
 
@@ -53,6 +53,16 @@
 				
 
 			</main>
+
+			<div class="panel">
+				<div>
+					<p><span class="cartHeader">Your cart</span><span class="cartCancel"><a id="cancel" href="#">x</a></span></p>
+				</div>
+				<div class="clear borderBelow"></div> 
+				<div></div>
+				<div></div>
+			</div>
+
 
 			<div class="sidebar">
 				<div class="sidebarMain">
@@ -80,6 +90,8 @@
 
 			</div>
 
+			
+
 			<div class="signUpNow">
 				<input id="subscriptionTextField" type="text">
 				<a class="signUpLink" >Sign Up Now!</a>
@@ -96,22 +108,7 @@
 			</footer>
 		</div><!-- #container -->
 
-		<div class="panel">
-			<h3 id="panelh3">Your Cart</h3><br><a href="#" style="text-align: right"><img id="cancel" src="images/cancel.png"/></a>
-
-			<p>Black Soul Laces</p>
-			<img id="smallPicture" src="images/blackgrey.jpg"/>
-			<p>- 1 +</p>
-			<BR>
-			<BR>
-			<BR>
-			<p>SUBTOTAL&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$100</p>
-
-			<p>Shipping & taxes calculated at checkout</p>
-			<BR>
-			<BR>
-			<p><a href="#" id="finalCartLink"> CHECK OUT -></a></p>
-		</div>
+		
 
 		<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 		<script src="script.js"></script>

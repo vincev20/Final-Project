@@ -1,0 +1,155 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+ 
+ 
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+     /*background: url("../images/bg.jpg") no-repeat;*/
+     background-size: 100% 800px;
+ 
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+/*****************/
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/bg.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+   /* position: absolute;*/
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallaxMid {
+    /* The image used */
+    background-image: url("../images/bg.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.logoImage {
+	height: 100px;
+	width: 400px;
+}
+
+.blackBg {
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	padding-top: 20px;
+}
+
+#buyButton{
+	display: inline-block;
+	border: 1px solid black;
+	height: 48px;
+	padding: 12px 0px;
+	width: 200px;
+	background-color: grey;
+	opacity: 0.8;
+
+}
+
+#second {
+	background-image: url("../images/othermerch.jpg");
+	/*z-index: -3;*/
+}
+
+#third {
+	background-image: url("../images/limegrey.jpg");
+}
+
+article {
+	text-align: center;
+	position: fixed;
+	top: 30%;
+	/*left: 35%;*/
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#buyButton:hover {
+	background-color: white;
+	color: black;
+}
+

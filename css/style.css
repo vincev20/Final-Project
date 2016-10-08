@@ -112,6 +112,16 @@ footer {
   padding-top: 240px;
 }
 
+.pictureContainer {
+	width: 600px;
+	height: 600px;
+	/*overflow: hidden;*/
+}
+
+.pictureContainer img{
+	max-width: 100%;
+}
+
 
 .getitnow {
   display: block;
@@ -286,23 +296,60 @@ footer {
 /*******************************************/
 
 .panel {
-position: fixed;
-top: 0;
+position: absolute;
+display: inline-block;
+/*top: 0;
 right: 0;
 bottom: 0;
-display: none;
+*/
+/*display: none;
+*/
 background: #000000;
 border:1px solid #111111;
--moz-border-radius-topleft: 20px;
+/*-moz-border-radius-topleft: 20px;
 -webkit-border-top-left-radius: 20px;
 -moz-border-radius-bottomleft: 20px;
 -webkit-border-bottom-left-radius: 20px;
-width: 600px;
-height: 100%;
-padding: 30px 30px 30px 130px;
+*/
+height: 238vh;
+top: 0px;
+/*bottom: 0px;*/
+right: -405px;
+width: 405px;
+/*padding: 30px 30px 30px 130px;*/
+padding: 20px 5px 0px 30px;
+
 filter: alpha(opacity=85);
 opacity: .85;
+transition: right .25s ease-in-out;
+}
 
+
+.topBlack {
+	background-color: black;
+}
+
+.borderBelow {
+	width: 95%;
+	padding-top: 12px;
+	border-bottom: 1px solid gray;
+
+}
+
+.open {
+  right: 0;
+}
+
+.cartHeaderList li {
+	display: inline-block;
+}
+
+.cartHeader{
+	float: left;
+}
+
+.cartCancel{
+	float: right;
 }
 
 .panel {
@@ -341,8 +388,8 @@ opacity: .85;
 }
 
 .logoImage{
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 200px;
 
 }
 
@@ -402,7 +449,8 @@ header li {
 }
 
 header a {
-  color: #000000;
+  color: white;
+/*  color: #000000;*/
   font-size: 24px;
   font-weight: 200;
 
@@ -522,9 +570,9 @@ div.panel img {
 
 article img {
 	display: inline-block;
-	width: 600px;
-	height: 600px;
-
+	/*max-width: 600px;
+	maxheight: 600px;
+*/
 	margin-bottom: 33px;
 	text-align: center;
 }
