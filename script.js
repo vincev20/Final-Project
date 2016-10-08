@@ -1,5 +1,7 @@
 
 
+var elem = "<div style=display: inline-block; border: 0px solid white;'><img style='width:75px;height:75px;margin: 0px;padding-top: 20px' src='images/blackgrey.jpg'></div><div style='display: inline-block; border: 0px solid white;'><div style=' border: 0px solid white;'>Soul Lace</div><div style='display: inline-block; border: 1px solid white;'><div style='display: inline-block; border: 1px solid white;'>&nbsp-&nbsp</div><div style='display: inline-block; border: 1px solid white;'>&nbsp&nbsp1&nbsp&nbsp</div><div style='display: inline-block; border: 1px solid white;'>&nbsp+&nbsp</div></div><div style='display: inline-block; border: 0px solid white;'>&nbsp&nbsp&nbsp$19.00</div></div><div style='border: 0px solid white;'>&nbsp</div>"
+
 
 var $pictures = ["bluegrey.jpg", "limegrey.jpg","mintgrey.jpg","mustardgrey.jpg","purplegrey.jpg","redblack.jpg","whiteblack.jpg","whitegrey.jpg"]
 var $names = ["Blue", "Black","Olive","Teal","Purple","Red","White","Gray"]
@@ -53,13 +55,24 @@ $addToCartButton.click(function() {
 		inside div, add an image
 		image float left
 
-		
+	
+		check main image
+		var mainimage
+
+		i
+
+
 	*/
-	var link = $mainPicture.attr("src"); 
+
+
+
+
+
+	//var link = $mainPicture.attr("src"); 
 	// alert($link)
 
-	$items.append("<li><div class='itemContainer'><img style='display:inline-block' src=" + link + " /><p style='display:inline-block'>Soul Laces</p><p>- 1 + $19.00</p></div></li>");
-
+	//$items.append("<li><div class='itemContainer'><img style='display:inline-block' src=" + link + " /><p style='display:inline-block'>Soul Laces</p><p>- 1 + $19.00</p></div></li>");
+	$items.append(elem);
 
 	$(".panel").toggleClass('open');
 	//$(this).toggleClass("active");
