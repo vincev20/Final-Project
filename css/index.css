@@ -88,14 +88,16 @@
 }
 
 #u983
-{
+{	
+	
+	/*transition: all 2s ease;*/
 	z-index: 12;
 	width: 1166px;
 	height: 1000px;
 	border-color: #000000;
 	position: relative;
 	left: -100px;
-	transition: all 2s;
+	
 }
 
 #pu902
