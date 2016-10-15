@@ -208,6 +208,7 @@ height: 1730px;
 }
 
 .logoImage{
+	margin-top: 15px;
 	height: 50px;
 	width: 200px;
 
@@ -350,6 +351,7 @@ header li {
 }
 
 header a {
+	font-family: 'Abhaya Libre', serif;
   color: white;
 /*  color: #000000;*/
   font-size: 24px;
