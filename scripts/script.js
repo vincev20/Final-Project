@@ -52,6 +52,7 @@ $prevLink.click(function () {
   return false;
 })
 
+
 $boxes.hover(function(){
 	//alert();
 
