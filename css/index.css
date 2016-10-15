@@ -93,9 +93,9 @@
 	width: 1166px;
 	height: 1000px;
 	border-color: #000000;
-	background-color: #C7B299;
 	position: relative;
 	left: -100px;
+	transition: all 2s;
 }
 
 #pu902

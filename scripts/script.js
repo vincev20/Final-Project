@@ -60,31 +60,42 @@ $boxes.hover(function(){
 
 	if ($(this).hasClass("box1")){
 		//alert("he");
+
 			$second.toggleClass("second1");
 	}
 
 	if ($(this).hasClass("box2")){
 		//alert("he");
+			
+
 			$second.toggleClass("second2");
 	}
 
 	if ($(this).hasClass("box3")){
 		//alert("he");
+			
+
 			$second.toggleClass("second3");
 	}
 
 	if ($(this).hasClass("box4")){
 		//alert("he");
+			
+
 			$second.toggleClass("second4");
 	}
 
 	if ($(this).hasClass("box5")){
 		//alert("he");
+			
+
 			$second.toggleClass("second5");
 	}
 
 	if ($(this).hasClass("box6")){
 		//alert("he");
+		
+
 			$second.toggleClass("second6");
 	}
 
